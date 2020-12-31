@@ -2,7 +2,7 @@
 
 # BitCoin(BTC) Price - A Predictive Analysis 
 
-In this project, I utilize historical BTC price data pulled from the Binance API client to explore and analyze its predictibility as an asset using rather traditional indicators as model features. 
+In this project, I utilize historical BTC price data pulled from the Binance API client to explore and analyze its predictability as an asset using rather traditional indicators as model features. 
 
 **Approach**
 
