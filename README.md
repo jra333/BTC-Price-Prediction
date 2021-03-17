@@ -1,36 +1,28 @@
 ![Banner](https://static.coindesk.com/wp-content/uploads/2019/04/bitcoin-btc-chart-1200x600.jpg)
-
 # BitCoin(BTC) Price - A Predictive Analysis 
 
-In this project, I utilize historical BTC price data pulled from the Binance API client to explore and analyze its predictability as an asset. Using traditional indicators like OBV, ATR, EMAs Long/Short as well as Tweet sentiment as features to produce five distinct models.
+Using the Binance cryptocurrency exchange API client BTC data were obtained and examined, culminating in the construction of five distinct regression models to predict next day's close price as a function of its inferred financial market indicator statistics. Three were built using linear regression algorithms: Ordinary Least Squares (OLS), Lasso, and Ridge. One was built using the Random Forest Regression (RFR) algorithm. Then last, one was built using a Long Short Term Memory(LSTM) recurrent neural network.
 
 ### Table of Contents:
-**Approach**
-  - [Proposal](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Proposal.pdf)
-  - Notebooks:
-      - [Wrangling/Acquisition](https://github.com/jra333/BTC-Price-Prediction/blob/main/Data%20Wrangling/BTC_Prediction_DataWrangling.ipynb)
-        - [Tweet Scrape](https://github.com/jra333/BTC-Price-Prediction/blob/main/Data%20Wrangling/BTC_Tweet_Scrape.ipynb)
-      - [EDA/Inferential](https://github.com/jra333/BTC-Price-Prediction/blob/main/Exploratory%20Data%20Analysis%20(EDA)/BTC_Prediction%20(EDA%20Stage).ipynb)
-      - [Preprocessing/Training](https://github.com/jra333/BTC-Price-Prediction/blob/main/Preprocessing-Training/BTC_Prediction%20(Preprocessing_Training%20Stage).ipynb)
-      - [Modeling](https://github.com/jra333/BTC-Price-Prediction/blob/main/Modeling/BTC_Prediction%20(Modeling%20Stage).ipynb)
-        - [Plots and Visualization](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/plots_visualization)
-        - [LIME Tables](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/LIME_tables)
+- **Approach**
+    - [Proposal](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Proposal.pdf)
+    - Notebooks:
+        - [Wrangling/Acquisition](https://github.com/jra333/BTC-Price-Prediction/blob/main/Data%20Wrangling/BTC_Prediction_DataWrangling.ipynb)
+          - [Tweet Scrape](https://github.com/jra333/BTC-Price-Prediction/blob/main/Data%20Wrangling/BTC_Tweet_Scrape.ipynb)
+        - [EDA/Inferential](https://github.com/jra333/BTC-Price-Prediction/blob/main/Exploratory%20Data%20Analysis%20(EDA)/BTC_Prediction%20(EDA%20Stage).ipynb)
+        - [Preprocessing/Training](https://github.com/jra333/BTC-Price-Prediction/blob/main/Preprocessing-Training/BTC_Prediction%20(Preprocessing_Training%20Stage).ipynb)
+        - [Modeling](https://github.com/jra333/BTC-Price-Prediction/blob/main/Modeling/BTC_Prediction%20(Modeling%20Stage).ipynb)
+          - [Plots and Visualization](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/plots_visualization)
+          - [LIME Tables](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/LIME_tables)
+- **Findings**
+    - [Report](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Report.pdf)
+    - [Presentation](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Presentation.pdf)
+- [**Future Work**](https://github.com/jra333/BTC-Price-Prediction#future-work)
 
-**Findings**
-  - [Report](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Report.pdf)
-  - [Presentation](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Presentation.pdf)
 
-[**Future Work**](https://github.com/jra333/BTC-Price-Prediction#future-work)
-
-## Approach
-
-Models that produced predictions using linear regression were OLS (Ordinary Least Squares), Lasso, and Ridge. Further experimentation warranted a tree based approach using the ensemble method of RFR (Random Forest Regressor). We also applied a deep learning approach to our dataset using an RNN (Recurrent Neural Network) for time series forecasting using an LSTM (Long Short Term Memory) framework.
-
-## Findings
-
-![Model Scores](https://i.gyazo.com/21fbbed4a1a8915db812bda9af6ff185.png)
-
+## Results
 ![Model Scores Chart](https://i.gyazo.com/2e50fce14c5e4ce362a924c3c4c3ebfe.png)
+![Model Scores](https://i.gyazo.com/21fbbed4a1a8915db812bda9af6ff185.png)
 
 We found that the RFR model produced the most accurate predictions regarding BTCs closing price. However, the R2 score of the training set for the RFR was substantially lower (0.9172). The concern is solved by computing its OOB (out-of-bag) score, which was 0.9136. Comparing that score to the train R2 (0.9172) we can see how similar they are. Since the OOB is an unbiased estimate of a model’s performance on a test set the same size as the training, we can confirm that the model produces relatively "true" predictions, solidifying its test R2 score of 0.98845.
 
@@ -49,4 +41,5 @@ The OLS and Lasso frameworks produced nearly identical results. Their respective
   - Compute prospective Sharpe Ratio 
 - Test for replicable results on different assets (equities, ETFs, etc.)
 
-***You can read the in-depth report [here](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Report.pdf) and view all model prediction visualizations [here](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/plots_visualization).***
+
+### ***You can read the in-depth report [here](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Report.pdf) and view all model prediction visualizations [here](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/plots_visualization).***
