@@ -5,23 +5,22 @@
 In this project, I utilize historical BTC price data pulled from the Binance API client to explore and analyze its predictability as an asset. Using traditional indicators like OBV, ATR, EMAs Long/Short as well as Tweet sentiment as features to produce five distinct models.
 
 ### Table of Contents:
-
-- **Approach**
+**Approach**
   - [Proposal](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Proposal.pdf)
   - Notebooks:
-    - [Wrangling/Acquisition](https://github.com/jra333/BTC-Price-Prediction/blob/main/Data%20Wrangling/BTC_Prediction_DataWrangling.ipynb)
-      - [Tweet Scrape](https://github.com/jra333/BTC-Price-Prediction/blob/main/Data%20Wrangling/BTC_Tweet_Scrape.ipynb)
-    - [EDA/Inferential](https://github.com/jra333/BTC-Price-Prediction/blob/main/Exploratory%20Data%20Analysis%20(EDA)/BTC_Prediction%20(EDA%20Stage).ipynb)
-    - [Preprocessing/Training](https://github.com/jra333/BTC-Price-Prediction/blob/main/Preprocessing-Training/BTC_Prediction%20(Preprocessing_Training%20Stage).ipynb)
-    - [Modeling](https://github.com/jra333/BTC-Price-Prediction/blob/main/Modeling/BTC_Prediction%20(Modeling%20Stage).ipynb)
-      - [Plots and Visualization](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/plots_visualization)
-      - [LIME Tables](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/LIME_tables)
+      - [Wrangling/Acquisition](https://github.com/jra333/BTC-Price-Prediction/blob/main/Data%20Wrangling/BTC_Prediction_DataWrangling.ipynb)
+        - [Tweet Scrape](https://github.com/jra333/BTC-Price-Prediction/blob/main/Data%20Wrangling/BTC_Tweet_Scrape.ipynb)
+      - [EDA/Inferential](https://github.com/jra333/BTC-Price-Prediction/blob/main/Exploratory%20Data%20Analysis%20(EDA)/BTC_Prediction%20(EDA%20Stage).ipynb)
+      - [Preprocessing/Training](https://github.com/jra333/BTC-Price-Prediction/blob/main/Preprocessing-Training/BTC_Prediction%20(Preprocessing_Training%20Stage).ipynb)
+      - [Modeling](https://github.com/jra333/BTC-Price-Prediction/blob/main/Modeling/BTC_Prediction%20(Modeling%20Stage).ipynb)
+        - [Plots and Visualization](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/plots_visualization)
+        - [LIME Tables](https://github.com/jra333/BTC-Price-Prediction/tree/main/Modeling/LIME_tables)
 
-- **Findings**
+**Findings**
   - [Report](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Report.pdf)
   - [Presentation](https://github.com/jra333/BTC-Price-Prediction/blob/main/BTC_PricePred_Presentation.pdf)
 
-- [**Future Work**](https://github.com/jra333/BTC-Price-Prediction#future-work)
+[**Future Work**](https://github.com/jra333/BTC-Price-Prediction#future-work)
 
 ## Approach
 
