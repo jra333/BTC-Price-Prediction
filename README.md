@@ -1,5 +1,5 @@
 ![Banner](https://static.coindesk.com/wp-content/uploads/2019/04/bitcoin-btc-chart-1200x600.jpg)
-# BitCoin(BTC) Price - A Predictive Analysis 
+# Bitcoin Price - A Predictive Analysis 
 
 Using the Binance cryptocurrency exchange API client BTC data were obtained and examined, culminating in the construction of five distinct regression models to predict next day's close price as a function of its inferred financial market indicator statistics. Three were built using linear regression algorithms: Ordinary Least Squares (OLS), Lasso, and Ridge. One was built using the Random Forest Regression (RFR) algorithm. Then last, one was built using a Long Short Term Memory(LSTM) recurrent neural network.
 
